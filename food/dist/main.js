@@ -22,8 +22,8 @@ const Search = function () {
     console.log(data)
   };
   
- const listener=function(obj,data){
-    console.log(obj)
-alert(data)
-
-  }
+  $(document).on('click', '.img', function() {
+    let firstIng = $(this).closest('.result').find('.ingredients').find("ul").find('li:first').text()
+    console.log(firstIng)
+    alert(firstIng)
+});

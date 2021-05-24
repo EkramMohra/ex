@@ -19,12 +19,13 @@
        
         <div>
     
-        <img src={{this.img}} onclick="listener(this) " >
+        <img src={{this.img}} class="img"  >
     
     
         </div>
+       <p> ingredients:</p>
         <div class="ingredients">
-            ingredients:
+          
             <ul>
                 {{#each ingredients}}
                 <li> {{ this }}</li>
@@ -45,10 +46,10 @@
     <button onclick=Search()>Search</button>
     <div id="results"></div>
 
-
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
     <script src="main.js"></script>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
+    
 </body>
 
 </html>
