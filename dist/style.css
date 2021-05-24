@@ -1,0 +1,44 @@
+#results{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.result{
+
+    height: 350px;
+    background-color:rgb(233, 195, 124);
+   text-align: center;
+    border-radius: 4px;
+}
+
+img{
+    background-color: rgb(212, 204, 204);
+    margin-right: 15px;
+    margin-left: 15px;
+    width:100px;
+     height:80px
+
+    
+}
+input,button {
+    border: 3px solid rgb(231, 191, 115) ;
+    padding: 15px 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input{
+      width: 300px;
+  }
+.ingredients{
+    
+    text-align:start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    padding-right: 15px;
+    padding-left: 15px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Totally Real Site</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+
+    <script id="template" type="text/x-handlebars-template">
+
+
+        {{#each this}}
+        <div class="result" > 
+        <div><a href={{this.href}}>{{ this.title }}</a></div>
+       
+        <div>
+    
+        <img src={{this.img}} onclick="listener(this) " >
+    
+    
+        </div>
+        <div class="ingredients">
+            ingredients:
+            <ul>
+                {{#each ingredients}}
+                <li> {{ this }}</li>
+            </ul>
+            {{/each}}
+        </div>
+        
+    </div>
+  
+    {{/each}}
+   
+
+
+</script>
+    ﻿
+
+    <input type="text" id="type" placeholder="ingredient type">
+    <button onclick=Search()>Search</button>
+    <div id="results"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="main.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</body>
+
+</html>
